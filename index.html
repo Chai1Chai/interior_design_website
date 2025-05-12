@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/indexstyle.css">
+    <link rel="stylesheet" href="css/model.css">
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400&family=Montserrat:wght@400&family=Nunito+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <title>Interior Design</title>
+</head>
+<body>
+
+    <!--  ===== Header =====  -->
+    <header class="header">
+        <div id="main" class="header_container _conteiner">
+            <img class="header_logo" src="img/logo.svg" alt="">
+            <nav class="header_nav">                
+                <ul>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                    <li><a href="#contact">Документы</a></li>
+                </ul>                
+            </nav>
+            <div class="header_contact">+7 (123) 456-78-90</div>
+            <div class="burger">
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+     <!-- ===== Hero Section ===== --> 
+    <section class="hero">
+        <div class="_conteiner _padding">
+            <h2 class="hero_title">
+                Создаем красивые интерьеры, в<br> 
+                которых комфортно жить
+            </h2>
+            <div class="buttons-group">
+                <a href="portfolio.html" class="hero_projects-button">Смотреть проекты</a>
+                <a href="#contact" class="hero_measurement-button">Записаться на замер</a>
+            </div>
+        </div>        
+    </section> 
+    
+    <!-- ===== Decorative Lines (1)===== --> 
+    <div class="background-svg lines-1"></div>
+
+    <!-- ===== Tariff Section ===== --> 
+    <section id="services" class="tariff_block _conteiner _padding">
+        <h2 class="tariff_title title_font">Мы не ограничиваем вас одной услугой — <br>
+            выбирайте подходящую</h2>
+        <div class="tariff-grid">
+            <article class="tarif">
+                <img src="img/photo_base.png" alt="Тариф 1" class="tarif-image">
+                <div class="tarif-content">
+                    <h3>/BASE</h3>
+                    <a href="#" class="tarif-button" data-tariff="BASE">Подробнее ↗</a>
+                </div>                
+            </article>
+            <article class="tarif">
+                <img src="img/photo_medium.jpg" alt="Тариф 2" class="tarif-image">
+                <div class="tarif-content">
+                    <h3>/MEDIUM</h3>
+                    <a href="#" class="tarif-button" data-tariff="MEDIUM">Подробнее ↗</a>
+                </div>                
+            </article>
+            <article class="tarif">
+                <img src="#" alt="Тариф 3" class="tarif-image">
+                <div class="tarif-content">
+                    <h3>/PREMIUM</h3>
+                    <a href="#" class="tarif-button" data-tariff="PREMIUM">Подробнее ↗</a>
+                </div>
+            </article>
+            <article class="tarif">
+                <img src="#" alt="Тариф 4" class="tarif-image">
+                <div class="tarif-content">
+                    <h3>/INDUSTRIAL</h3>
+                    <a href="#" class="tarif-button" data-tariff="INDUSTRIAL">Подробнее ↗</a>
+                </div>                
+            </article>
+        </div>
+    </section>
+    <!-- ===== Modal ===== -->
+    <div class="tariff-modal" id="tariffModal">
+        <div class="tariff-modal-content">
+            <div class="header-modal">            
+                <h2 id="modalTitle"></h2>
+                <button class="modal-close" id="modalClose"><img src="img/cross-buttom.svg" alt="&times"></button>
+            </div>
+        </div>
+        <div id="modalBody" style="padding: 20px;">
+            <!-- Содержимое будет подставлено динамически -->
+        </div>
+    </div>
+
+    <!-- ===== Advantages Section ===== --> 
+    <section class="advantage _conteiner _padding">
+        <h2 class="advantage_title title_font">
+            Преимущества дизайн-студии
+        </h2>
+        <div class="advantages_list">
+            <div class="advantages__item">
+                <h3 class="advantages_title">/Качественно</h3>
+                <p class="advantages_text">Гарантируем высокое качество проектов, которые соответствуют вашим ожиданиям и современным стандартам.</p>            
+            </div>
+            <div class="advantages__item">
+                <h3 class="advantages_title">/Быстро</h3>
+                <p class="advantages_text">Понимаем ценность вашего времени и стремимся выполнить работу в кратчайшие сроки без потери качества.</p>            
+            </div>
+            <div class="advantages__item">
+                <h3 class="advantages_title">/Уникально</h3>
+                <p class="advantages_text">Проекты отличаются оригинальностью и вниманием к деталям. Ваш интерьер станет настоящим произведением искусства.</p>            
+            </div>            
+        </div>
+    </section> 
+
+    <!-- ===== Decorative Lines (2) ===== --> 
+    <div class="background-svg lines-2"></div>
+
+    <!-- ===== Workflow Section ===== --> 
+    <section class="work">
+        <div class="_conteiner _padding">
+            <h2 class="work_title title_font">
+                Как проходит работа над проектом
+            </h2>
+            <div class="work_video">Видео</div>
+        </div>
+    </section> 
+    
+    <!-- ===== Partners Section ===== --> 
+    <section class="partners _conteiner _padding">
+        <h2 class="partner_title title_font">
+            Наши проверенные партнеры
+        </h2>
+        <div class="partners_list">
+            <div class="partners__item">
+                <h3 class="partners_title">/Текст</h3>
+                <p class="partners_text">Текст</p>            
+            </div>
+            <div class="partners__item">
+                <h3 class="partners_title">/Текст</h3>
+                <p class="partners_text">Текст</p> 
+            </div>
+            <div class="partners__item">
+                <h3 class="partners_title">/Текст</h3>
+                <p class="partners_text">Текст</p> 
+            </div>            
+        </div>
+    </section>
+    <div>
+     <!-- ===== Decorative Lines (3) ===== --> 
+     <div class="background-svg lines-3"></div>
+        
+        <!-- ===== Testimonials Section ===== --> 
+    <section id="reviews" class="customer _conteiner _padding">
+        <div class="customer_header">
+            <h2 class="customer_title title_font">Что говорят заказчики</h2>
+            <div class="customer_button_group">
+              <button class="customer_button_left" id="slider-left"><img src="img/Arrow left.svg" alt=""></button>
+              <button class="customer_button_right" id="slider-right"><img src="img/Arrow right.svg" alt=""></button>
+            </div>
+        </div>   
+        
+        <div class="customer_slider_wrapper">
+            <div class="customer_slider" id="slider">
+                <div class="customer_card">1Смотреть ↗</div>
+                <div class="customer_card">2Смотреть ↗</div>
+                <div class="customer_card">3Смотреть ↗</div>
+                <div class="customer_card">4Смотреть ↗</div>
+                <div class="customer_card">5Смотреть ↗</div>
+                <div class="customer_card">6Смотреть ↗</div>
+                <div class="customer_card">7Смотреть ↗</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Decorative Lines (4) ===== --> 
+    <div class="background-svg lines-4"></div>
+
+    <!-- ===== Contact Section ===== -->  
+    <section id="contact" class="contact _conteiner _padding">
+        <div class="contact_wrapper">
+            <div class="contact_left">
+              <h2 class="contact_title title_font">
+                Заинтересовала услуга? <br>
+                Оставляйте заявку, и мы с вами свяжемся в ближайшее время
+              </h2>        
+              <form class="contact_form" action="#">
+                <div class="custom_dropdown">
+                    <div class="dropdown_selected" id="dropdownToggle">
+                      <span class="selected_text">Выберите услугу</span>
+                      <img class="dropdown_arrow" src="img/arrow_down.svg" alt="arrow">
+                    </div>
+                    <ul class="dropdown_list" id="dropdownList">
+                      <li data-value="consultation"><span class="name">Консультация</span><span class="price">1999 руб</span></li>
+                      <li data-value="measurement"><span class="name">Замер</span><span class="price">1999 руб</span></li>
+                      <li data-value="3d-measurement"><span class="name">3D замер</span><span class="price">1999 руб</span></li>
+                    </ul>
+                    <input type="hidden" name="service" id="dropdownValue" required>
+                  </div>        
+                <input type="text" id="name" name="name" placeholder="Имя" required>
+                <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67" required>        
+                <div class="contact_footer">
+                    <button class="contact_button" type="submit">Отправить заявку</button>
+                    <h3 class="agreement">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</h3>
+                </div>                
+              </form>
+            </div>    
+            <div class="contact_right">
+              <img class="contact_img" src="img/application-img.jpg" alt="Обратная связь">
+            </div>
+        </div>
+    </section>
+    
+    <!-- ===== Footer ===== --> 
+    <footer id="contact" class="footer">
+        <div class="footer_container _conteiner _padding">
+            <div class="footer_connection">
+                <h1 class="footer_logo">
+                    <img src="img/logo.svg" alt="">
+                </h1>
+                <div class="footer_socialnetwork">
+                    <img src="img/icons8-telegram-50 1.svg" alt="">
+                    <img src="img/icons8-whatsapp-50 1.svg" alt="">
+                </div>                
+                <div class="footer_contact montserrat">+7 (123) 456-78-90</div>
+                <div class="email montserrat">Почта</div>
+            </div>
+            <div class="footer_address">
+                <h3 class="footer_address_title">Адрес</h3>
+                <div class="address montserrat">г. Красноярск, ул пр-т Мира 1</div>
+            </div>
+            <div class="footer_menu">  
+                <h3 class="footer_menu_title">Навигация</h3>        
+                <nav class="footer_nav montserrat">                
+                    <ul>
+                        <li><a href="#main">Главная</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                        <li><a href="#documents">Документы</a></li>
+                    </ul>                
+                </nav>
+            </div>
+            <div class="footer_information">
+                <h3 class="footer_information_title">Информация</h3>
+                <ul class="montserrat">
+                    <li><a href="#">Договор оферты</a></li>
+                    <li><a href="#">Политика конфиденциальность</a></li>
+                </ul>  
+            </div>
+        </div>        
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

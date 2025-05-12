@@ -1,0 +1,445 @@
+/* ===== Hero Section ===== */
+
+.hero {
+    position: relative;
+    padding-top: 65px;
+}
+.hero_title{
+    font-family: 'Forum', serif;
+    font-weight: 400;
+    font-size: 52px;
+}
+.buttons-group {
+    display: flex;
+    gap: 10px; 
+    margin-top: 30px; 
+}
+.hero_projects-button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 250px;
+    height: 50px;
+    
+    background: #FFE6C0;
+    border-radius: 100px;
+    border: 1px solid #000;
+    
+    align-self: flex-start;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+.hero_measurement-button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 250px;
+    height: 50px;
+    
+    background: #2D2B2B;
+    border-radius: 100px;
+    border: 1px solid #FFE6C0;
+    
+    align-self: flex-start;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #FFE6C0;
+}
+
+/* ===== Decorative Lines (1) ===== */
+
+.lines-1 {
+    position: absolute;
+    width: 100vw;
+    height: 940px;
+    background: url("../img/lines-index/lines_1.svg") no-repeat right center;
+    background-size: contain;
+    margin-top: -250px;
+    z-index: -1;
+  }
+
+/* ===== Tariff Section ===== */
+
+.tariff_block{
+    padding-top: 100px;
+}
+
+.tariff-grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 600px));
+    gap: clamp(20px, 3vw, 30px);    
+    justify-content: center;
+    width: 100%;
+}
+.tarif{
+    width: 100%;
+    max-width: 600px;
+    min-height: 274px; 
+    background: #ffffff;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.tarif-image {
+    width: 60%; 
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    flex-shrink: 0; 
+}
+.tarif-content {    
+    width: 40%;
+    padding: 30px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tarif h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px; 
+    margin-top: 20px;
+    color: #000000;
+    word-break: break-word; 
+}
+
+.tarif-button {    
+    color: #2D2B2B;
+    align-self: flex-start; 
+    margin-top: auto; 
+    white-space: nowrap;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.tarif-button:hover {
+    color: #686868;
+}
+
+/* ===== Advantages Section ===== */
+.advantage{
+    padding-top: 150px;
+}
+
+.advantages_list{
+    display: flex;
+    flex-direction: row;
+    gap: 116px;
+}
+
+.advantages_title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+.advantages_text{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* ===== Decorative Lines (2) ===== */
+.lines-2 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh; 
+    background: url("../img/lines-index/lines_2.svg") no-repeat center center;
+    background-size: contain;
+    margin-top: 0px;
+    z-index: -1;
+  }
+
+/* ===== Workflow Section ===== */
+.work {
+    padding-top: 140px;
+}
+
+.work_video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: center;
+    height: 400px;
+    width: 100%;
+    background-color: #ccc;
+}
+
+/* ===== Partners Section ===== */
+
+.partners{
+    padding-top: 140px;
+}
+
+.partners_list{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+}
+
+.partners_title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+.partners_text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* ===== Decorative Lines (3) ===== */
+.lines-3 {
+    position: absolute;
+    width: 100vw;
+    height: 600px;
+    background: url("../img/lines-index/lines_3.svg") no-repeat left center;
+    background-size: contain;
+    margin-top: 50px;
+    z-index: -1;
+  }
+
+/* ===== Testimonials Section ===== */
+.customer{
+    padding-top: 205px;
+}
+.customer_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.customer_button_group {
+    display: flex;          
+    gap: 10px;
+  }
+.customer_button_right, 
+.customer_button_left{
+    width: 27px;
+    height: 28px;
+    
+    background: #2D2B2B;
+    border-radius: 100px;
+    border: 1px solid #ffffff; 
+    
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.customer_slider_wrapper {
+    overflow: hidden;
+    width: 100%;
+  }
+.customer_slider {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.customer_card {
+    min-width: calc((100% - 40px) / 3); 
+    height: 300px;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    font-size: 16px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+/* ===== Decorative Lines (4) ===== */
+.lines-4 {
+    position: absolute;
+    width: 100vw;
+    height: 1200px; 
+    background: url("../img/lines-index/lines_4.svg") no-repeat center center;
+    background-size: contain;
+    margin-top: -100px; 
+    z-index: -1;
+  }
+
+/* ===== Contact Section ===== */
+.contact{
+    padding-top: 115px;
+}
+
+.contact_wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    height: 722px;
+}
+
+.contact_left {
+    max-width: 456px;
+    min-width: 300px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.contact_title {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.contact_right {
+    flex-shrink: 0;
+}
+
+.contact_img {
+    width: 534px;
+    height: 722px;
+    object-fit: cover;
+}
+
+.contact_form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.custom_dropdown {
+    position: relative;
+    width: 100%;
+    font-family: inherit;
+  }
+  
+.dropdown_selected {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    height: 60px;
+    padding: 0 20px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #6e6e6e; 
+  }
+  
+.dropdown_arrow {
+    width: 16px;
+    margin-left: auto;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+.dropdown_list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    z-index: 10;
+  }
+  
+.dropdown_list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #6e6e6e;
+    cursor: pointer;
+  }
+  
+.dropdown_list li:hover {
+    background-color: #f5f5f5;
+    color: #000;
+  }
+  
+.dropdown_list li:hover .name,
+.dropdown_list li:hover .price {
+    color: #000;
+  }
+  
+.dropdown_open .dropdown_list {
+  display: block;
+}
+
+.dropdown_open .dropdown_arrow {
+    transform: rotate(180deg);
+}
+
+.contact_form input {
+    width: 100%;
+    Height: 60px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    font-family: inherit;
+    background-color: #fff;
+    color: #000;
+}
+
+.contact_button {
+    width: 100%;
+    height: 60px;
+    
+    align-self: center;
+    cursor: pointer;
+    background: #FFE6C0;
+    border-radius: 30px;
+    border: 1px solid #000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000;
+}
+
+.contact_form .agreement {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    color: #ccc;    
+}
+.contact_footer {
+    width: 250px;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+}
+
+
+/*---------MEDIA -----------*/
+@media (max-width: 1210px) {
+    .tariff-grid {
+        grid-template-columns: minmax(300px, 600px);
+    }
+}
+@media (max-width: 1170px) {
+    .contact_right {
+      display: none;
+    }
+}
+
+    
