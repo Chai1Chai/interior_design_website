@@ -19,6 +19,10 @@
     display: flex;
     gap: 20px;    
 }
+.header_nav li:hover{
+    color: #FFE6C0;
+    transition: 0.4s;
+}
 
 .open{
     display: flex !important;
@@ -106,7 +110,10 @@
     flex-direction: column;
     gap: 20px;
 }
-
+.footer_nav li:hover, .footer_information li:hover{
+    color: #FFE6C0;
+    transition: 0.4s;
+}
 .montserrat {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -139,7 +146,7 @@
         z-index: 50;
         overflow-y: auto;
         padding: 50px 40px;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.9);
         color: white;
         animation: burgeranimation 0.4s;
     }

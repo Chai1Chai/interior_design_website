@@ -33,7 +33,12 @@
     text-decoration: none;
     color: #000;
 }
-
+.hero_projects-button:hover{
+    background: #2D2B2B;
+    border: 1px solid #FFE6C0;
+    color: #FFE6C0;
+    transition: 0.4s;
+}
 .hero_measurement-button{
     display: inline-flex;
     justify-content: center;
@@ -52,7 +57,12 @@
     font-size: 15px;
     color: #FFE6C0;
 }
-
+.hero_measurement-button:hover{
+    background: #FFE6C0;
+    border: 1px solid #FFE6C0;
+    color: #000;
+    transition: 0.4s;
+}
 /* ===== Decorative Lines (1) ===== */
 
 .lines-1 {
@@ -411,7 +421,12 @@
     font-size: 15px;
     color: #000;
 }
-
+.contact_button:hover{
+    background: #2D2B2B;
+    border: 1px solid #FFE6C0;
+    color: #FFE6C0;
+    transition: 0.4s;
+}
 .contact_form .agreement {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
