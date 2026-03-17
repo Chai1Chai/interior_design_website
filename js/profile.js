@@ -3,7 +3,7 @@ document.querySelector('.burger').addEventListener('click', function () {
     const navList = document.querySelector('.header_nav ul');
     navList.classList.toggle('open');
 
-    // Проверка: если меню открыто и дополнительные элементы ещё не добавлены — добавить
+    
     if (navList.classList.contains('open') && !navList.querySelector('.extra-link')) {
         const privacy = document.createElement('li');
         privacy.classList.add('extra-link');
@@ -16,8 +16,7 @@ document.querySelector('.burger').addEventListener('click', function () {
         navList.appendChild(privacy);
         navList.appendChild(offer);
     }
-
-    // Если меню закрывается — удалить эти элементы
+    
     if (!navList.classList.contains('open')) {
         document.querySelectorAll('.extra-link').forEach(el => el.remove());
     }

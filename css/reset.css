@@ -13,7 +13,7 @@
 a:focus,a:active{outline: none;}
 a, a:visited, a:focus, a:active {
     text-decoration: none;  
-    color: inherit;         
+             
 }
 
 nav,footer,header,aside{display: block;}

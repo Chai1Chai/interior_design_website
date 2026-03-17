@@ -30,8 +30,7 @@
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 500;
     font-size: 15px;
-    text-decoration: none;
-    color: #000;
+    color: black;
 }
 .hero_projects-button:hover{
     background: #2D2B2B;
@@ -168,20 +167,6 @@
     z-index: -1;
   }
 
-/* ===== Workflow Section ===== */
-.work {
-    padding-top: 140px;
-}
-
-.work_video{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: center;
-    height: 400px;
-    width: 100%;
-    background-color: #ccc;
-}
 
 /* ===== Partners Section ===== */
 
@@ -445,6 +430,7 @@
 }
 
 
+
 /*---------MEDIA -----------*/
 @media (max-width: 1210px) {
     .tariff-grid {
@@ -456,5 +442,79 @@
       display: none;
     }
 }
+@media (max-width: 768px) {
+    .hero_title {
+        font-size: 32px; 
+        line-height: 1.2;
+    }
+    .buttons-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero_projects-button,
+    .hero_measurement-button {
+        width: 100%;
+        height: 45px;
+        font-size: 14px;
+    }
+        .tariff-grid {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+    .tarif {
+        flex-direction: column; 
+        max-width: 100%;
+    }
+    .tarif-image {
+        width: 100%;
+        height: auto;
+    }
+    .tarif-content {
+        width: 100%;
+        padding: 15px;
+    }
+    .tarif h3 {
+        font-size: 18px;
+    }
+    .tarif-button {
+        font-size: 14px;
+    }
+        .advantages_list,
+    .partners_list {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .advantages_title,
+    .partners_title {
+        font-size: 20px;
+    }
+    .advantages_text,
+    .partners_text {
+        font-size: 14px;
+    }
+        .contact_wrapper {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+    .contact_left {
+        max-width: 100%;
+    }
+    .contact_right {
+        display: none; 
+    }
+        .contact_form input,
+    .custom_dropdown .dropdown_selected,
+    .dropdown_list li,
+    .contact_button {
+        font-size: 14px;
+        height: 40px;
+        padding: 8px 12px;
+    }
 
+    .contact_title {
+        font-size: 20px;
+    }
+
+}
     

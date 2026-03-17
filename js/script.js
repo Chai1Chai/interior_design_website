@@ -3,7 +3,7 @@ document.querySelector('.burger').addEventListener('click', function () {
     const navList = document.querySelector('.header_nav ul');
     navList.classList.toggle('open');
 
-    // Проверка: если меню открыто и дополнительные элементы ещё не добавлены — добавить
+  
     if (navList.classList.contains('open') && !navList.querySelector('.extra-link')) {
         const privacy = document.createElement('li');
         privacy.classList.add('extra-link');
@@ -16,8 +16,6 @@ document.querySelector('.burger').addEventListener('click', function () {
         navList.appendChild(privacy);
         navList.appendChild(offer);
     }
-
-    // Если меню закрывается — удалить эти элементы
     if (!navList.classList.contains('open')) {
         document.querySelectorAll('.extra-link').forEach(el => el.remove());
     }
@@ -89,12 +87,18 @@ const tariffTitles = {
     PREMIUM: "PREMIUM",
     INDUSTRIAL: "INDUSTRIAL"
 };
-
+const tariffDescriptions = {
+    BASE: "Базовый тариф для небольших проектов. Включает консультацию и базовый замер, подходит для оценки стоимости и планирования работ.",
+    MEDIUM: "Стандартный тариф для средних проектов. Включает замер, консультацию и рекомендации по дизайну интерьера, оптимальное решение для квартиры или офиса.",
+    PREMIUM: "Премиум-тариф для комплексного проекта. Включает 3D-замер, подбор материалов и полное проектирование интерьера с детальными планами.",
+    INDUSTRIAL: "Тариф для крупных или нестандартных объектов. Включает комплексную проработку проекта, 3D-замеры, подбор материалов и сопровождение на всех этапах реализации."
+};
 document.querySelectorAll(".tarif-button").forEach(button => {
     button.addEventListener("click", e => {
         e.preventDefault(); 
         const tariff = button.getAttribute("data-tariff");
         modalTitle.textContent = tariffTitles[tariff] || "Тариф";
+        modalBody.textContent = tariffDescriptions[tariff] || "Описание тарифа отсутствует";
         modal.classList.add("open");
     });
 });
@@ -104,7 +108,6 @@ modalClose.addEventListener("click", () => {
     modal.classList.remove("open");
 });
 
-// Плавная прокрутка к якорям
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();

@@ -118,3 +118,65 @@
     justify-content: center;
     align-items: center;
 }
+@media (max-width: 768px) {
+    .portfolio_title_conteiner {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .portfolio_title_main {
+        font-size: 20px;
+    }
+    .portfolio_title_ourwork {
+        font-size: 36px;
+    }
+
+    .projec_wrapper {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 50px;
+    }
+    .projec_header h2 {
+        font-size: 22px;
+    }
+    .projec_header h3 {
+        font-size: 14px;
+        padding-top: 20px;
+    }
+    .projec_img {
+        width: 100%;
+        height: auto;
+    }
+    .gallery_content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .gallery_info {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .gallery_info_item h2 {
+        font-size: 20px;
+    }
+    .gallery_info_item h3 {
+        font-size: 14px;
+    }
+    .gallery_slider_wrapper {
+        width: 100%;
+        margin-left: 0;
+    }
+    .gallery_img {
+        flex: 0 0 100%;
+        height: auto;
+    }
+    .gallery_button_group {
+        gap: 5px;
+    }
+    .gallery_button_right, 
+    .gallery_button_left {
+        width: 25px;
+        height: 25px;
+    }
+}
